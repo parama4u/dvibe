@@ -12,7 +12,7 @@ def main(SLACK_WEBHOOK):
 
     # Fetch repository status data from GitHub API
     repo_loc = "appium/appium"
-    github_token = "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"
+    github_token = os.environ.get("GITHUB_TOKEN")
 
     headers = {
         "Authorization": f"Bearer {github_token}",
