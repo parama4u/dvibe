@@ -1,5 +1,9 @@
-name: 'git-vibe'
+name: 'Github Repo Reports'
 description: 'Repository reports for Slack'
+author: Param P <parama4u@gmail.com>
+branding:
+  icon: 'award'
+  color: 'orange'
 inputs:
   SLACK_WEBHOOK:  
     description: 'Link for the Slack webhook'
