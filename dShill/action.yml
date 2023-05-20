@@ -1,0 +1,11 @@
+name: 'dshill'
+description: 'Repository reports for Slack'
+inputs:
+  SLACK_WEBHOOK:  
+    description: 'Link for the Slack webhook'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.SLACK_WEBHOOK }}
