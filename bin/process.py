@@ -13,13 +13,13 @@ def main(SLACK_WEBHOOK):
     # Fetch repository status data from GitHub API
     repo_loc = os.environ.get("GITHUB_REPOSITORY")
     github_token = os.environ.get("GITHUB_TOKEN")
+    github_api = os.environ.get("GITHUB_API_URL")
 
     headers = {
         "Authorization": f"Bearer {github_token}",
         "Accept": "application/vnd.github.v3+json"
     }
-    pulls_url = f"https://api.github.com/repos/{repo_loc}/pulls"
-
+    pulls_url = f"{github_api}/repos/{repo_loc}/pulls"
     response = requests.get(pulls_url, headers=headers)
     data = response.json()
     if response.status_code == 200:
