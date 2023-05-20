@@ -1,4 +1,4 @@
-name: 'dvibe'
+name: 'git-vibe'
 description: 'Repository reports for Slack'
 inputs:
   SLACK_WEBHOOK:  
