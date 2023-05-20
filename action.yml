@@ -1,4 +1,4 @@
-name: 'dshill'
+name: 'dvibe'
 description: 'Repository reports for Slack'
 inputs:
   SLACK_WEBHOOK:  
