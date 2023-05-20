@@ -11,7 +11,7 @@ def main(SLACK_WEBHOOK):
     }
 
     # Fetch repository status data from GitHub API
-    repo_loc = "appium/appium"
+    repo_loc = os.environ.get("GITHUB_REPOSITORY")
     github_token = os.environ.get("GITHUB_TOKEN")
 
     headers = {
